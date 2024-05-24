@@ -114,7 +114,7 @@
     <main>
       <article>
         <!-- insert iframe from youtube -->
-        <iframe width="400" src="https://www.youtube.com/watch?v=ojcNcvb1olg" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg?si=-WWOvKtwuiMGn3SU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <h2>Rocking the free web</h2>
 
         <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
@@ -125,22 +125,26 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img >
+          <img srcset="firefox_logo-only_RGB-120.png 120px, firefox_logo-only_RGB-400.png 400px" sizes="(max-width: 500px) 500px, (min-width: 501px) 501px" src="firefox_logo-only_RGB.png" alt="firefox">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img img scrset="mozilla-dinosaur-head-120 120px, mozilla-dinosaur-head-400 400px" sizes="(max-width: 500px) 500px, (min-width: 501px) 501px" src="mozilla-dinosaur-head.png" alt="mozzila website">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img scrset="firefox-addons-120.jpg w120, mozilla-dinosaur-head-400.jpg w400" sizes="(max-width: 500px) 500px, (min-width: 501px) 501px" src="firefox-addons.jpg" alt="Mozilla firefox addons" >
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img src="mdn.svg" alt="developer mozilla">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
+        <picture>
+          <source srcset="red-panda600.jpg" media="(max-width: 600px)">
+          <source srcset="red-panda1200.jpg" media="(min-width: 601px)">
+          <img src="red-panda.jpg" alt="red panda image">
+        </picture>
       </div>
 
     </main>
