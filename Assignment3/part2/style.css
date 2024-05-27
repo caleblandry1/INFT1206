@@ -3,3 +3,21 @@ html {
 }
 
 /* Your CSS below here */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  /*I just looked up a converter for px to rem*/
+  font-size: 1.125rem;
+  color: white;
+  background-color: red;
+
+}
