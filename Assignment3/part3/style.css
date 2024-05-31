@@ -43,3 +43,43 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+@font-face {
+  font-family: "bodyfont";
+  src: url(Adhesian-Thin.ttf) format('truetype');
+  font-weight: normal;
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: 'headerfont';
+  src: url(KleinSlabserif-light.ttf) format('truetype');
+  font-weight: normal;
+  font-size: large;
+}
+
+html {
+  font-family: 'bodyfont', serif;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'headerfont' serif;
+  letter-spacing: 3px;
+
+}
+
+h2 {
+  font-family: 'headerfont', serif;
+  letter-spacing: 3px;
+}
+
+body {
+  line-height: normal;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+section p:first-child {
+  text-indent: 20px;
+}
