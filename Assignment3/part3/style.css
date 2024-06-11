@@ -43,6 +43,7 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+/* first part */
 @font-face {
   font-family: "bodyfont";
   src: url(Adhesian-Thin.ttf) format('truetype');
@@ -80,6 +81,7 @@ body {
   word-spacing: 3px;
 }
 
+/* second part */
 section :is(h1, h2) + p {
   text-indent: 20px;
 }
@@ -105,4 +107,25 @@ a:active {
 
 a:visited {
   color: #a40;
+}
+
+/*final part*/
+li {
+  line-height: normal;
+  letter-spacing: 1px;
+  list-style-type: square;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  border: solid #a66;
+  border-width: 3px;
+  margin-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  list-style-type: none;
+  text-decoration: none;
 }
