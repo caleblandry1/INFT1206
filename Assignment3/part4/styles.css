@@ -25,6 +25,9 @@ body {
   }
   
   .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
@@ -39,7 +42,7 @@ body {
   
   nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -65,9 +68,15 @@ body {
   }
 
   article {
-
+    width: 70%;
   }
 
   aside {
-    
+    width: 30%;
+  }
+
+  aside ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
   }
